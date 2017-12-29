@@ -16,8 +16,18 @@ for iter = 1:num_iters
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCost) and gradient here.
     %
+    
 
+    predictions = X*theta;      %Predictions of hypothesis on all m examples
+    errors = (predictions - y);
+    tmp = errors;
+    
+    delta = (1/m)*sum(X.*repmat((X*theta - y), 1, size(X,2)));
 
+    
+    J = 1/(m) * sum(sqrErrors);
+
+    theta = theta - alpha;
 
 
 
