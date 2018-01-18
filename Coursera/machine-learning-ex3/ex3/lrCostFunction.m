@@ -38,8 +38,11 @@ grad = zeros(size(theta));
 
 
 
+theta_with_ezroed_first_element = [0; theta(2:length(theta))];
 
+J = 1/m * (-y'*log(sigmoid(X*theta)) - (1-y)'*log(1 - sigmoid(X*theta))) + lambda/2/m*sum(theta_with_ezroed_first_element.^2);
 
+grad = 1/m * ((sigmoid(X*theta)- y)'*X)' + lambda/m*theta_with_ezroed_first_element;
 
 
 

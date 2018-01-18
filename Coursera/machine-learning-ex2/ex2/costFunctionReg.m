@@ -17,7 +17,7 @@ grad = zeros(size(theta));
 %               Compute the partial derivatives and set grad to the partial
 %               derivatives of the cost w.r.t. each parameter in theta
 
-theta_with_ezroed_first_element = [0; theta(2:length(theta))]
+theta_with_ezroed_first_element = [0; theta(2:length(theta))];
 
 J = 1/m * (-y'*log(sigmoid(X*theta)) - (1-y)'*log(1 - sigmoid(X*theta))) + lambda/2/m*sum(theta_with_ezroed_first_element.^2);
 

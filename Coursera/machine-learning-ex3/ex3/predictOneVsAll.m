@@ -18,7 +18,7 @@ p = zeros(size(X, 1), 1);
 X = [ones(m, 1) X];
 
 % ====================== YOUR CODE HERE ======================
-% Instructions: Complete the following code to make predictions using
+% Instructions:   
 %               your learned logistic regression parameters (one-vs-all).
 %               You should set p to a vector of predictions (from 1 to
 %               num_labels).
@@ -30,10 +30,9 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
+hypothesis = sigmoid(X * all_theta');
 
-
-
-
+[max_value, p] = max(hypothesis, [], 2);
 
 
 % =========================================================================
