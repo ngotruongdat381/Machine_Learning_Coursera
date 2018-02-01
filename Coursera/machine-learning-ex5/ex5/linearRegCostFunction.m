@@ -19,10 +19,11 @@ grad = zeros(size(theta));
 %               You should set J to the cost and grad to the gradient.
 %
 
+theta_removed_bias = [0; theta(2:length(theta))];
+J = 1/(2*m) * sum((X*theta - y) .^2) + lambda/(2*m)*sum(theta_removed_bias.^2);
 
 
-
-
+grad = 1/m * ((X*theta - y)'*X)' + lambda/m*theta_removed_bias;
 
 
 
