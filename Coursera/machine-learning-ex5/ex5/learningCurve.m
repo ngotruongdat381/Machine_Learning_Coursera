@@ -53,9 +53,19 @@ error_val   = zeros(m, 1);
 
 % ---------------------- Sample Solution ----------------------
 
-
-
-
+    
+for i = 1:m
+    X_sub = X(1:i, :);
+    y_sub = y(1:i);
+    
+    %You can use the trainLinearReg function to find the ? parameters
+    theta = trainLinearReg(X_sub, y_sub, lambda);
+    
+    %Calculate Errors to plot learning cure
+    error_train(i) = linearRegCostFunction(X_sub, y_sub, theta, 0);
+    
+    error_val(i) = linearRegCostFunction(Xval, yval, theta, 0);
+end
 
 
 
