@@ -1,42 +1,26 @@
-Do You Want To Make $1000 Or More Per Week?
+Hi Dat
 
+This is Satya Mallick from LearnOpenCV.com
+
+In today's post, we will learn how to make our OpenCV code 5x faster with just one line of code change. 
+
+OpenCV Transparent API (C++/Python)
+
+The Transparent API (T-API) in OpenCV has been around since version 3.0 but Python support was added only in version 3.2. T-API uses OpenCL under the hood and technically it can use your GPU, multiple processors or even DSPs ( although I have never tested this ). You don't have to manually write code for checking what computing resources are available on a machine. T-API does this seamlessly for you. 
+
+There is one caveat though. There is an overhead for sending image data to the GPU and it does not make sense to incur this overhead when the computation is not expensive. So, use it wisely or else it will backfire!
+
+Hope this email was helpful. Happy hacking!
+
+Satya
+LearnOpenCV.com
+
+Twitter
+Linkedin
  
-
-If you are a motivated and qualified individual - I 
-will personally demonstrate to you a system that will 
-make you $1,000 per week or more! This is NOT mlm.
-
  
+3779 Fallon Circle
+San Diego CA 92130
+USA 
 
-Call our 24 hour pre-recorded number to get the 
-details.  
-
- 
-
-000-456-789
-
- 
-
-I need people who want to make serious money.  Make 
-the call and get the facts. 
-
-Invest 2 minutes in yourself now!
-
- 
-
-000-456-789
-
- 
-
-Looking forward to your call and I will introduce you 
-to people like yourself who
-are currently making $10,000 plus per week!
-
- 
-
-000-456-789
-
-
-
-3484lJGv6-241lEaN9080lRmS6-271WxHo7524qiyT5-438rjUv5615hQcf0-662eiDB9057dMtVl72
-
+Unsubscribe | Change Subscriber Options 
